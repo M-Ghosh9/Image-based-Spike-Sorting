@@ -14,6 +14,5 @@ Better than 1D CNN: ResNet's deeper architecture captures intricate patterns, le
 Challenges:
 Might lead to more use of memory when storing as images
 
-Current Performance: The model is currently training with an accuracy of 77%. Manual inspection is still required to ensure correct labeling
-![image](https://github.com/user-attachments/assets/91eb3294-d32f-4586-b5aa-28cd6dc3de27)
+Current Performance: The model is currently training with an accuracy of 77%. Manual inspection is still required to ensure correct labeling. 
 
