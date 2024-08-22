@@ -12,6 +12,13 @@ Proposed Architecture-
 EfficientNet-B3 with CBAM Architecture for Image-based Spike Sorting-
 ![image](https://github.com/user-attachments/assets/58553cd3-4c50-4e89-89b6-ce6788f3fc72)
 
+Comaprsion with other Pretrained models- 
+![image](https://github.com/user-attachments/assets/4b7da045-2b71-43f9-924c-8b42ea15d882)
+
+![image](https://github.com/user-attachments/assets/5f84be6f-9069-46d4-948c-79e98e67ecb3)
+
+![image](https://github.com/user-attachments/assets/2c005825-fe84-4216-99c9-52dce46a2948)
+
 
 Results- 
 ![image](https://github.com/user-attachments/assets/fa3a3d41-e86a-4ad8-a798-6878dfbe2e42)
