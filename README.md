@@ -35,6 +35,10 @@ Classification Summary-
 Overall comparison between 1000 classes and 3544 classes- 
 ![image](https://github.com/user-attachments/assets/29384664-eaa8-45ea-9228-14da2e33e23b)
 
+Final comparison of all the proposed models for Multi-class spike classification-
+![image](https://github.com/user-attachments/assets/39518711-ee5f-4a3d-ab01-1ec1996922f2)
+
+
 
 
 
