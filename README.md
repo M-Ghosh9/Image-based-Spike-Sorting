@@ -38,6 +38,8 @@ Overall comparison between 1000 classes and 3544 classes-
 Final comparison of all the proposed models for Multi-class spike classification-
 ![image](https://github.com/user-attachments/assets/39518711-ee5f-4a3d-ab01-1ec1996922f2)
 
+* requires more training time
+
 
 
 
