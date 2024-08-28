@@ -57,42 +57,6 @@ class CustomDataset(torch.utils.data.Dataset):
     def __del__(self):
         self.hf.close()
 
-# Plot synthetic learning curves
-def plot_learning_curves(pdf=None):
-    time_log("Plotting synthetic learning curves...")
-    epochs = np.arange(1, 101)
-    train_acc = np.linspace(23.9, 86.9, 100) + np.random.normal(0, 1, 100)
-    val_acc = np.linspace(23.0, 86.7, 100) + np.random.normal(0, 1, 100)
-    train_loss = np.linspace(8.9056, 0.08345, 100) + np.random.normal(0, 0.5, 100)
-    val_loss = np.linspace(8.9, 0.1, 100) + np.random.normal(0, 0.5, 100)
-
-    plt.figure(figsize=(12, 6))
-
-    # Plot loss curves
-    plt.subplot(1, 2, 1)
-    plt.plot(epochs, train_loss, label='Train Loss', color='blue')
-    plt.plot(epochs, val_loss, label='Validation Loss', color='orange')
-    plt.xlabel('Epoch')
-    plt.ylabel('Loss')
-    plt.legend()
-    plt.title('ITSC Loss Curve for 1000 classes')
-    plt.grid(True)
-
-    # Plot accuracy curves
-    plt.subplot(1, 2, 2)
-    plt.plot(epochs, train_acc, label='Train Accuracy', color='green')
-    plt.plot(epochs, val_acc, label='Validation Accuracy', color='red')
-    plt.xlabel('Epoch')
-    plt.ylabel('Accuracy')
-    plt.legend()
-    plt.title('ITSC Accuracy Curve for 1000 classes')
-    plt.grid(True)
-
-    plt.tight_layout()
-    if pdf:
-        pdf.savefig()
-    plt.close()
-
 # Plot Top-K Accuracy
 def plot_top_k_accuracy(accuracies, k_values=[1, 5, 10], pdf=None):
     time_log("Plotting top-k accuracy...")
@@ -271,7 +235,6 @@ if __name__ == "__main__":
 
         # Plot learning curves
         with PdfPages('performance_plots.pdf') as pdf:
-            plot_learning_curves(pdf=pdf)
             plot_top_k_accuracy([top_k_accumulator[k] for k in [1, 5, 10]], pdf=pdf)
             plot_random_samples(random_images, random_labels, random_predictions, LabelEncoder().fit([str(i) for i in range(num_classes)]), pdf=pdf)
 
